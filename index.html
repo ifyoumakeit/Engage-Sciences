@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>Engage Sciences Test Form</title>
+
+  <script src="./assets/javascripts/modernizr.custom.js"></script>
+
+  <link rel="stylesheet" href="./assets/stylesheets/reset.css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!--[if (gt IE 8) | (IEMobile)]><!-->
+    <link rel="stylesheet" href="./assets/stylesheets/unsemantic-grid-responsive.css" /> 
+    <!--<![endif]-->
+
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <link rel="stylesheet" href="./assets/stylesheets/ie.css" />
+    <![endif]-->
+
+    <link rel="stylesheet" href="./assets/stylesheets/engage.css" />
+
+    <!--SLIDER REPLACEMENT CSS-->
+    <link rel="stylesheet" href="./assets/stylesheets/jquery.nouislider.min.css" />
+  </head>
+
+  <body>
+
+    <div id="wrap">
+      <a name="top"></a>
+      <header>
+        <h1>Responsive Form</h1>
+        <h2><em>by</em> Dave Garwacke</h2>
+      </header>  
+
+      <div class="grid-container" id="container">
+        <div class="grid-100 mobile-grid-100">
+
+          <!--FORM START-->
+          <form method="post" id="form" parsley-validate novalidate>
+
+            <div class="grid-container grid-parent form_section" id="form_title">
+              <div class="grid-30 form_header">
+                <label class="label">Your Title</label>
+              </div>
+              <div class="grid-20 suffix-50 form_body">
+                <select>
+                  <option>Mr</option>
+                  <option>Mrs</option>
+                  <option>Dr</option>
+                  <option>Miss</option>
+                  <option>Master</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid-container grid-parent form_section" id="form_name">    
+              <div class="grid-30 form_header">
+                <label class="label">Your Name</label>
+              </div>
+              <div class="grid-70 form_body grid-parent">
+                <div class="grid-parent">
+                <div class="grid-50">
+                  <label class="sublabel" for="firstname">First Name</label>
+                  <input 
+                    class="grid-100 mobile-grid-100"
+                    type="text" 
+                    name="firstname" 
+                    placeholder="e.g., John" 
+                    parsley-group="name" 
+                    parsley-trigger="change" 
+                    parsley-error-message="Please enter a valid first name." 
+                    parsley-minlength="2" 
+                    required />
+                </div>
+
+                <div class="grid-50">
+                  <label class="sublabel" for="lastname">Last Name</label>
+                  <input 
+                    class="grid-100 mobile-grid-100"
+                    type="text" 
+                    name="lastname" 
+                    placeholder="e.g., Smith" 
+                    parsley-group="name" 
+                    parsley-trigger="change" 
+                    parsley-error-message="Please enter a valid last name." 
+                    parsley-minlength="2" 
+                    required />
+                </div>
+                </div>
+
+
+              </div>
+            </div>
+            
+            <div class="grid-container grid-parent form_section" id="form_email">
+              <div class="grid-30 form_header">
+                <label class="label" for="email">Email Address</label>
+              </div>
+              <div class="grid-70 form_body">
+                <input 
+                  class="grid-100 mobile-grid-100" 
+                  type="email" 
+                  name="name" 
+                  parsley-type="email"  
+                  parsley-error-message="Please enter a valid email address." 
+                  parsley-trigger="change"
+                  placeholder="e.g., john.smith@gmail.com" 
+                  required />                                
+              </div>
+            </div>
+
+            <div class="grid-container grid-parent form_section" id="form_address">
+              <div class="grid-30 form_header">
+                <label class="label">Delivery Info</label>
+              </div>
+              <div class="grid-70 grid-parent form_body">
+
+                <div class="grid-100">
+                  <label class="sublabel" for="streetaddress">Street Address</label>
+                  <input 
+                    class="grid-100 mobile-grid-100" 
+                    type="text" 
+                    name="streetaddress" 
+                    parsley-trigger="change" 
+                    parsley-error-message="Please enter a valid address."
+                    placeholder="e.g., 123 Fake Street" 
+                    required />
+                </div>
+                <div class="grid-100">
+                  <label class="sublabel hide-on-desktop hide-on-tablet" for="streetaddress2">Street Address Line 2</label>
+                  <input 
+                    class="grid-100 mobile-grid-100" 
+                    type="text" 
+                    name="streetaddress2"
+                    parsley-trigger="change" 
+                    parsley-error-message="Please enter a valid address."
+                    placeholder="e.g., Apt #2" />
+                </div>
+                <div class="grid-100">
+                  <label class="sublabel" for="city">City</label>
+                  <input 
+                    class="grid-100 mobile-grid-100" 
+                    type="text" 
+                    name="city" 
+                    parsley-trigger="change" 
+                    parsley-error-message="Please enter a valid city."
+                    placeholder="e.g., AnyCity" 
+                    required />
+                </div>
+                <div class="grid-45">
+                  <label class="sublabel" for="state">State</label>
+                  <select 
+                    name="state"
+                    parsley-error-message="Please select state." 
+                    required>
+                    <option value="">Select state</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>        
+              </div>
+              <div class="grid-35">
+                <label class="sublabel" for="zipcode">Zip Code</label>
+                <input 
+                  class="grid-100 mobile-grid-100" 
+                  name="zipcode" 
+                  type="text" 
+                  maxlength="5"
+                  parsley-trigger="change" 
+                  placeholder="e.g., 10001" 
+                  parsley-rangelength="[5,5]" 
+                  parsley-error-message="Invalid zipcode."
+                  parsley-type="number" 
+                  required />
+              </div>
+
+
+            </div>
+          </div>
+
+
+          <div class="grid-container grid-parent form_section" id="form_marketing">
+
+            <div class="grid-30 form_header">
+              <label class="label" for="marketing">Marketing Opt-in</label>
+            </div>
+            <div class="grid-70 form_body">
+              <div class="choices">
+                <div class="choice">
+                  <input 
+                    type="checkbox" 
+                    name="marketing[]"  
+                    parsley-group="marketing" 
+                    parsley-trigger="change" 
+                    parsely-error-message="You must select 1 choice or less." 
+                    parsley-error-container="#form_marketing .error_message"  
+                    parsley-maxcheck="1" />
+                  <label class="sublabel">Company Only</label>
+                </div>
+                <div class="choice">
+                  <input 
+                    type="checkbox" 
+                    name="marketing" 
+                    parsley-group="marketing" 
+                    parsley-trigger="change" 
+                    parsely-error-message="You must select 1 choice or less." 
+                    parsley-error-container="#form_marketing .error_message"  
+                    parsley-maxcheck="1" />
+                  <label class="sublabel">Company + Selected Third Parties</label>
+                </div>
+                <div class="error_message"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-container grid-parent form_section" id="form_charity">
+
+            <div class="grid-30 form_header">
+              <label class="label" for="charity">Charity to Donate to</label>
+            </div>
+            <div class="grid-70 form_body">
+              <select 
+                name="charity"
+                parsley-trigger="change" 
+                parsley-error-message="Please select a charity." 
+                required >
+              <option value="">Please select</option>
+              <option value="GWGL">Give Water, Give Life</option>
+              <option value="WV">World Vision</option>
+              <option value="FBNYC">Food Bank of New York City</option>
+              <option value="RC">Red Cross</option>
+              <option value="OKRA">OKRA</option>
+            </select>
+
+          </div>
+
+        </div>
+        
+        <div class="grid-container grid-parent form_section" id="form_donation">
+
+          <div class="grid-30 form_header">
+            <label class="label" for="donation">Donation Amount</label>
+          </div>
+          <div class="grid-70 grid-parent form_body">
+
+            <div class="grid-30 relative">
+              <input 
+                name="donation" 
+                type="text" 
+                class="grid-100 mobile-grid-100" 
+                id="donation_value" 
+                value="100" 
+                readonly="readonly" />
+            </div>
+            <div class="grid-70">
+              <div id="slider" class="grid-100 mobile-grid-100"></div>
+              <label class="sublabel"><em>Slide to adjust dollar amount</em></label>
+            </div>
+
+          </div>
+
+        </div>
+        
+        <div class="grid-container grid-parent form_section" id="form_gender">
+
+          <div class="grid-30 form_header">
+            <label class="label" for="gender">Gender</label>
+          </div>
+          <div class="grid-70 form_body">
+            <div class="choices">
+              <div class="choice">
+                <input 
+                  type="radio" 
+                  name="gender[]" 
+                  parsley-group="gender" 
+                  parsley-mincheck="1" 
+                  parsley-trigger="change" 
+                  parsley-error-container="#form_gender .error_message"  
+                  required />
+                <label class="sublabel">Male</label>
+              </div>
+
+              <div class="choice">                     
+                <input 
+                  type="radio" 
+                  name="gender[]" 
+                  parsley-group="gender" 
+                  parsley-mincheck="1" 
+                  parsley-trigger="change" 
+                  parsley-error-container="#form_gender .error_message"  
+                  required />
+                <label class="sublabel">Female</label>
+              </div>
+
+              <div class="choice">
+                <input 
+                  type="radio" 
+                  name="gender[]" 
+                  parsley-group="gender" 
+                  parsley-mincheck="1"  
+                  parsley-trigger="change" 
+                  parsley-error-container="#form_gender .error_message"  
+                  required />
+                <label class="sublabel">I'd rather not disclose</label>
+              </div>
+
+              <div class="error_message"></div>
+            </div>
+
+          </div>
+
+        </div>
+        
+        <hr />
+
+        <div class="grid-container grid-parent form_section" id="form_terms">               
+          <div class="grid-70 push-30">
+            <input 
+              type="checkbox" 
+              parsley-group="terms" 
+              parsley-error-container="#form_terms .error_message"  
+              parsley-error-message="You must agree to continue." 
+              required /> 
+            <label class="sublabel">I Agree to <a href="#top" id="button_terms">Terms and Conditions</a></label>
+            <div class="error_message"></div>
+          </div>
+        </div>
+
+        <div class="grid-container grid-parent form_section" id="form_submit">              
+          <div class="grid-70 push-30">
+            <input type="submit" value="Submit" class="mobile-grid-100"  />
+          </div>
+        </div>
+      </form>                    
+    </div>
+  </div>
+
+  <footer>
+    <p>Form uses <a href="http://parsleyjs.org">ParsleyJS</a>, <a href="http://modernizr.com">Modernizr</a>, <a href="http://refreshless.com/nouislider/">NoUiSlider</a>, and <a href="http://unsemantic.com">Unsemantic</a></p>
+    <p><a href="ENGAGESCIENCES.zip">Download ZIP file</a></p>
+  </footer>  
+
+
+
+</div>
+
+
+
+<!-- TERMS & CONDITIONS -->
+<div id="overlay"></div>
+<div id="text_terms">
+  <div id="button_close">X</div>
+  <h2>Terms and Conditions</h2>
+  <hr />
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt, nunc eu dignissim laoreet, elit diam interdum elit, sit amet aliquam risus augue et enim. Etiam blandit, nulla vel elementum laoreet, orci ipsum auctor urna, quis porta lacus augue non eros. Vivamus porta lacus sit amet nulla egestas aliquet. Fusce nec enim mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec porttitor enim in mauris tempus, ut ultrices mauris fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+</div>
+
+<script src="./assets/javascripts/jquery-1.9.1.js"></script>
+<script src="./assets/javascripts/jquery.nouislider.min.js"></script>
+<script src="./assets/javascripts/parsley.js"></script>
+  <!--[if lt IE 9]>
+  <script src="./assets/javascripts/parsley.extend.js"></script>
+  <![endif]-->
+
+
+  <script src="./assets/javascripts/engage.js"></script>
+
+  <script>
+  </script>
+
+</body>
+</html>

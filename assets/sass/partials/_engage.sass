@@ -1,0 +1,335 @@
+
+// ENGAGE CSS v1
+// by: Dave Garwacke
+
+$color_bg: #30354b
+$color_text: #444444
+$color_container: lighten($color_bg,70)
+$color_error: #ae3b4d
+$color_action: #409f89
+
+$color_label: lighten($color_bg,65)
+$color_bg2: darken($color_bg,8)
+
+$size_text: 16px
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+body 
+  font-family: 'Open Sans', sans-serif
+  font-size: $size_text
+  line-height: 1.5
+  background: $color_bg
+
+  background: -moz-linear-gradient(top,  $color_bg 0%, $color_bg2 50%)
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color_bg, color-stop(50%,$color_bg2)))
+  background: -webkit-linear-gradient(top,  $color_bg 0%,$color_bg2 50%)
+  background: -o-linear-gradient(top,  $color_bg 0%,$color_bg2 50%)
+  background: -ms-linear-gradient(top,  $color_bg 0%,$color_bg2 50%)
+  background: linear-gradient(to bottom,  $color_bg 0%,$color_bg2 50%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color_bg', endColorstr='$color_bg2',GradientType=0 )
+
+  color: $color_text
+
+p
+  margin-bottom: 1em
+
+a,
+a:link
+  color: $color_action
+
+a:hover
+  color: darken($color_action,10)
+
+em
+  font-style: italic
+
+h1
+  display: inline-block
+  background: $color_action
+  padding: 0em 0.25em
+  font-size: 2em
+  font-weight: bold
+
+  -webkit-text-shadow: 1px 1px 1px $color_text
+  text-shadow: 1px 1px 1px $color_text
+
+h2
+  font-size: 1.2em
+
+hr 
+  border: 0
+  border-top: 1px lighten($color_container,4) solid
+  border-bottom: 1px darken($color_container,4) solid
+  height: 1px
+  width: 100%
+  display: block
+  margin: 1em 0 2em
+
+label
+  display: inline-block
+
+input 
+  border-radius: 5px
+
+input:disabled 
+  color: $color_action
+
+input[type=text],
+input[type=email],
+input[type=radio],
+input[type=checkbox]
+  margin: 0.3em
+  margin: 0.1em\9
+  vertical-align: top
+
+input[type=radio],
+input[type=checkbox]
+
+input[type=text],
+input[type=email],
+select,
+  background: #fff
+  padding: 1em
+  height: 4em
+  margin: 0 0 0.5em
+  display: inline-block
+
+  border-width: 1px
+  border-style: solid
+  border-color: #ddd
+
+  -webkit-transition: all 0.15s linear
+  -moz-transition: all 0.15s linear
+  transition: all 0.15s linear
+
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1)
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1)
+
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  text-indent: 0.01px
+  text-overflow: ''
+
+select 
+  background-image: url(../images/br_down.png)
+  background-repeat: no-repeat
+  background-position: right center
+  padding-right: 2em
+  width: 100%
+ 
+select::-ms-expand
+  display: none
+
+input[type=submit]
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  background: $color_action
+  color: $color_container
+  border: 0
+  outline: 0
+  cursor: pointer
+
+  -webkit-box-shadow: 0px 3px 0px 0px darken($color_action,20)
+  box-shadow: 0px 3px 0px 0px darken($color_action,20)
+  
+  padding: 0.5em 1em
+  font-size: 1.25em
+
+input[type=submit]:hover
+  background: darken($color_action,2)
+  -webkit-box-shadow: 0px 2px 0px 0px darken($color_action,20)
+  box-shadow: 0px 2px 0px 0px darken($color_action,20)
+
+input[type=text]:focus,
+input[type=email]:focus
+  outline: 0
+  border-color: $color_action
+  -webkit-box-shadow: 0 0 5px #999999
+  -moz-box-shadow: 0 0 5px #999999
+  box-shadow: 0 0 5px #999999
+
+header,
+footer
+  text-align: center
+  padding: 2em 0 2em
+  color: $color_container
+
+footer
+  font-size: 0.9em
+
+#container
+  background: $color_container
+  width: 45em
+  padding: 3em 0.625em
+  margin: 1em auto 2em
+  border: 1px #efefef solid
+  border-radius: 1em
+
+
+// LABELS AND FORM
+
+.form_section
+  margin-bottom: 1em
+
+.form_header 
+  text-align: right
+
+.choice 
+  margin: 0 0 0.25em
+
+.label
+  background: $color_label
+  text-shadow: 1px 1px 1px #fff
+  font-size: .8em
+  padding: 1em
+  height: 3.5em
+  position: relative
+  text-transform: uppercase
+  border-radius: 5px
+  
+.label:before
+  left: 100%
+  top: 50%
+  border-style: solid
+  content: " "
+  height: 0
+  width: 0
+  position: absolute
+  pointer-events: none
+
+  border-color: rgba(136, 183, 213, 0)
+  border-left-color: $color_label
+  border-width: 0.5em
+  margin-top: -0.5em 
+
+.sublabel
+  font-size: 0.8em
+  vertical-align: top
+
+.relative
+  position: relative
+
+// DONATION SLIDER
+
+#donation_value 
+  font-weight: bold
+  letter-spacing: -2px
+  display: inline-block
+  padding: 0
+  margin: 0
+  font-size: 2.5em
+  background: none
+  color: $color_action
+  border: 0
+  outline: 0
+  -webkit-box-shadow: none
+  box-shadow: none
+  height: auto
+
+#slider 
+  margin: 0.75em 0 0.25em
+
+
+// TERMS AND CONDITIONS
+
+#overlay 
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: #000
+  filter: alpha(opacity=50)
+  -moz-opacity: 0.5
+  -khtml-opacity: 0.5
+  opacity: 0.5
+  z-index: 90
+
+#text_terms 
+  display: none
+  position: fixed
+  width: 30em
+  margin: 4em auto
+  padding: 2em
+  background: $color_container
+  top: 2em
+  left: 50%
+  margin-left: -15em
+  z-index: 91
+  font-size: 0.8em
+
+#button_close 
+  position: absolute
+  top: 5px
+  right: 10px
+  font-weight: bold
+  cursor: pointer
+  padding: 0.25em 0.5em
+
+#button_close:hover
+  background: $color_label
+
+
+// ERROR STYLING 
+
+.parsley-error
+  border-color: $color_error !important
+
+.parsley-error-list
+  font-size: 0.8em
+  padding: 0
+  margin-bottom: 1em
+  list-style-type: none
+  clear: both
+
+.parsley-error-list li
+  line-height: 1em
+  color: $color_error
+
+
+// MOBILE STYLING 
+
+@media (max-width: 768px) 
+
+  input[type=submit]
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    margin-top: 1em
+
+  input[type=text],
+  select
+    margin-bottom: 1em
+
+  h1 
+    max-width: 100%
+  
+  #container 
+    width: 100%
+    padding: 1em 1em 3em
+    margin: 0
+    border-radius: 0
+
+  #text_terms
+    width: 100%
+    margin: 0
+    top: 0
+    left: 0  
+
+  .form_section
+    margin-bottom: 0em
+
+  .label 
+    width: 100%
+    margin: 2em 0 1.25em
+    text-align: left
+
+  .label:before
+    display: none

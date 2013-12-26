@@ -19,11 +19,14 @@ $(function() {
     //TERMS AND CONDITIONS
     $("#button_terms").on("click", function(e) {
         e.preventDefault();
-        $('#overlay,#text_terms').css("display", "block");
+        var height_terms = $('body').scrollTop() + 20;
+        console.log(height_terms);
+        $('#text_terms').css("top",height_terms+"px");
+        $('#overlay,#text_terms').show();
     });
 
     $("#overlay, #button_close").on("click", function(e) {
-        $('#overlay,#text_terms').css("display", "none");
+        $('#overlay,#text_terms').hide();
     });
 
     //PLACEHOLDER REPLACER

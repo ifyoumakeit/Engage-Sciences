@@ -1,8 +1,11 @@
+/* line 16, ../sass/partials/_engage.sass */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
+/* line 21, ../sass/partials/_engage.sass */
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -15,21 +18,31 @@ body {
   background: -ms-linear-gradient(top, #30354b 0%, #202332 50%);
   background: linear-gradient(to bottom, #30354b 0%, #202332 50%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color_bg', endColorstr='$color_bg2',GradientType=0 );
-  color: #444444; }
+  color: #444444;
+}
 
+/* line 37, ../sass/partials/_engage.sass */
 p {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
 
+/* line 40, ../sass/partials/_engage.sass */
 a,
 a:link {
-  color: #409f89; }
+  color: #409f89;
+}
 
+/* line 44, ../sass/partials/_engage.sass */
 a:hover {
-  color: #317b6a; }
+  color: #317b6a;
+}
 
+/* line 47, ../sass/partials/_engage.sass */
 em {
-  font-style: italic; }
+  font-style: italic;
+}
 
+/* line 50, ../sass/partials/_engage.sass */
 h1 {
   display: inline-block;
   background: #409f89;
@@ -37,11 +50,15 @@ h1 {
   font-size: 2em;
   font-weight: bold;
   -webkit-text-shadow: 1px 1px 1px #444444;
-  text-shadow: 1px 1px 1px #444444; }
+  text-shadow: 1px 1px 1px #444444;
+}
 
+/* line 60, ../sass/partials/_engage.sass */
 h2 {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+}
 
+/* line 63, ../sass/partials/_engage.sass */
 hr {
   border: 0;
   border-top: 1px #f9fafb solid;
@@ -49,25 +66,35 @@ hr {
   height: 1px;
   width: 100%;
   display: block;
-  margin: 1em 0 2em; }
+  margin: 1em 0 2em;
+}
 
+/* line 72, ../sass/partials/_engage.sass */
 label {
-  display: inline-block; }
+  display: inline-block;
+}
 
+/* line 75, ../sass/partials/_engage.sass */
 input {
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
+/* line 78, ../sass/partials/_engage.sass */
 input:disabled {
-  color: #409f89; }
+  color: #409f89;
+}
 
+/* line 81, ../sass/partials/_engage.sass */
 input[type=text],
 input[type=email],
 input[type=radio],
 input[type=checkbox] {
   margin: 0.3em;
   margin: 0.1em \9;
-  vertical-align: top; }
+  vertical-align: top;
+}
 
+/* line 92, ../sass/partials/_engage.sass */
 input[type=text],
 input[type=email],
 select {
@@ -88,18 +115,24 @@ select {
   -moz-appearance: none;
   appearance: none;
   text-indent: 0.01px;
-  text-overflow: ""; }
+  text-overflow: "";
+}
 
+/* line 118, ../sass/partials/_engage.sass */
 select {
   background-image: url(../images/br_down.png);
   background-repeat: no-repeat;
   background-position: right center;
   padding-right: 2em;
-  width: 100%; }
+  width: 100%;
+}
 
+/* line 125, ../sass/partials/_engage.sass */
 select::-ms-expand {
-  display: none; }
+  display: none;
+}
 
+/* line 128, ../sass/partials/_engage.sass */
 input[type=submit] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -112,47 +145,65 @@ input[type=submit] {
   -webkit-box-shadow: 0px 3px 0px 0px #23564a;
   box-shadow: 0px 3px 0px 0px #23564a;
   padding: 0.5em 1em;
-  font-size: 1.25em; }
+  font-size: 1.25em;
+}
 
+/* line 144, ../sass/partials/_engage.sass */
 input[type=submit]:hover {
   background: #3d9883;
   -webkit-box-shadow: 0px 2px 0px 0px #23564a;
-  box-shadow: 0px 2px 0px 0px #23564a; }
+  box-shadow: 0px 2px 0px 0px #23564a;
+}
 
+/* line 149, ../sass/partials/_engage.sass */
 input[type=text]:focus,
 input[type=email]:focus {
   outline: 0;
   border-color: #409f89;
   -webkit-box-shadow: 0 0 5px #999999;
   -moz-box-shadow: 0 0 5px #999999;
-  box-shadow: 0 0 5px #999999; }
+  box-shadow: 0 0 5px #999999;
+}
 
+/* line 157, ../sass/partials/_engage.sass */
 header,
 footer {
   text-align: center;
   padding: 2em 0 2em;
-  color: #edeef3; }
+  color: #edeef3;
+}
 
+/* line 163, ../sass/partials/_engage.sass */
 footer {
-  font-size: 0.9em; }
+  font-size: 0.9em;
+}
 
+/* line 166, ../sass/partials/_engage.sass */
 #container {
   background: #edeef3;
   width: 45em;
   padding: 3em 0.625em;
   margin: 1em auto 2em;
   border: 1px #efefef solid;
-  border-radius: 1em; }
+  border-radius: 1em;
+}
 
+/* line 177, ../sass/partials/_engage.sass */
 .form_section {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
 
+/* line 180, ../sass/partials/_engage.sass */
 .form_header {
-  text-align: right; }
+  text-align: right;
+}
 
+/* line 183, ../sass/partials/_engage.sass */
 .choice {
-  margin: 0 0 0.25em; }
+  margin: 0 0 0.25em;
+}
 
+/* line 186, ../sass/partials/_engage.sass */
 .label {
   background: #dddfe9;
   text-shadow: 1px 1px 1px white;
@@ -161,8 +212,10 @@ footer {
   height: 3.5em;
   position: relative;
   text-transform: uppercase;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
+/* line 196, ../sass/partials/_engage.sass */
 .label:before {
   left: 100%;
   top: 50%;
@@ -175,15 +228,21 @@ footer {
   border-color: rgba(136, 183, 213, 0);
   border-left-color: #dddfe9;
   border-width: 0.5em;
-  margin-top: -0.5em; }
+  margin-top: -0.5em;
+}
 
+/* line 211, ../sass/partials/_engage.sass */
 .sublabel {
   font-size: 0.8em;
-  vertical-align: top; }
+  vertical-align: top;
+}
 
+/* line 215, ../sass/partials/_engage.sass */
 .relative {
-  position: relative; }
+  position: relative;
+}
 
+/* line 220, ../sass/partials/_engage.sass */
 #donation_value {
   font-weight: bold;
   letter-spacing: -2px;
@@ -197,11 +256,15 @@ footer {
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  height: auto; }
+  height: auto;
+}
 
+/* line 235, ../sass/partials/_engage.sass */
 #slider {
-  margin: 0.75em 0 0.25em; }
+  margin: 0.75em 0 0.25em;
+}
 
+/* line 241, ../sass/partials/_engage.sass */
 #overlay {
   display: none;
   position: fixed;
@@ -214,79 +277,100 @@ footer {
   -moz-opacity: 0.5;
   -khtml-opacity: 0.5;
   opacity: 0.5;
-  z-index: 90; }
+  z-index: 90;
+}
 
+/* line 255, ../sass/partials/_engage.sass */
 #text_terms {
   display: none;
-  position: fixed;
-  width: 30em;
+  position: absolute;
+  max-width: 80%;
   margin: 4em auto;
   padding: 2em;
   background: #edeef3;
   top: 2em;
-  left: 50%;
-  margin-left: -15em;
+  left: 10%;
   z-index: 91;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+}
 
+/* line 267, ../sass/partials/_engage.sass */
 #button_close {
   position: absolute;
   top: 5px;
   right: 10px;
   font-weight: bold;
   cursor: pointer;
-  padding: 0.25em 0.5em; }
+  padding: 0.25em 0.5em;
+}
 
+/* line 275, ../sass/partials/_engage.sass */
 #button_close:hover {
-  background: #dddfe9; }
+  background: #dddfe9;
+}
 
+/* line 281, ../sass/partials/_engage.sass */
 .parsley-error {
-  border-color: #ae3b4d !important; }
+  border-color: #ae3b4d !important;
+}
 
+/* line 284, ../sass/partials/_engage.sass */
 .parsley-error-list {
   font-size: 0.8em;
   padding: 0;
   margin-bottom: 1em;
   list-style-type: none;
-  clear: both; }
+  clear: both;
+}
 
+/* line 291, ../sass/partials/_engage.sass */
 .parsley-error-list li {
   line-height: 1em;
-  color: #ae3b4d; }
+  color: #ae3b4d;
+}
 
 @media (max-width: 768px) {
+  /* line 300, ../sass/partials/_engage.sass */
   input[type=submit] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    margin-top: 1em; }
+    margin-top: 1em;
+  }
 
+  /* line 306, ../sass/partials/_engage.sass */
   input[type=text],
   select {
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+  }
 
+  /* line 310, ../sass/partials/_engage.sass */
   h1 {
-    max-width: 100%; }
+    max-width: 100%;
+  }
 
+  /* line 313, ../sass/partials/_engage.sass */
   #container {
     width: 100%;
     padding: 1em 1em 3em;
     margin: 0;
-    border-radius: 0; }
+    border-radius: 0;
+  }
 
-  #text_terms {
-    width: 100%;
-    margin: 0;
-    top: 0;
-    left: 0; }
-
+  /* line 320, ../sass/partials/_engage.sass */
   .form_section {
-    margin-bottom: 0em; }
+    margin-bottom: 0em;
+  }
 
+  /* line 323, ../sass/partials/_engage.sass */
   .label {
     width: 100%;
     margin: 2em 0 1.25em;
-    text-align: left; }
+    text-align: left;
+  }
 
+  /* line 328, ../sass/partials/_engage.sass */
   .label:before {
-    display: none; } }
+    display: none;
+  }
+}
